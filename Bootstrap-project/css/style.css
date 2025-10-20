@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 *{
   font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -125,8 +125,101 @@ section#about button{
   border: none;
 }
 
+/*! People */
+
+section#people{
+  background-color: var(--section-color);
+}
+
+section#people .container{
+  background-color: var(--secondary-color);
+}
 
 
+section#people .card{
+  background-color: var(--primary-color);
+  transition: scale 0.2s ;
+  overflow: hidden;
+}
+section#people .card img{
+  transition: scale 0.2s;
+}
+section#people .card:hover{
+  scale: 1.03;
+}
+section#people .card img:hover{
+  scale: 1.02;
+}
 
+section#people i.bi{
+  transition: opacity 0.2s;
+}
+section#people i.bi:hover{
+  opacity: 0.5;
+}
 
+/* ---------------------------------- Menu ---------------------------------- */
+
+section#menu{
+  background-color: var(--secondary-color);
+}
+section#menu button{
+  background-color: var(--secondary-color);
+  margin-right: 0.5rem;
+}
+section#menu .container{
+  background-color: var(--primary-color);
+}
+section#menu .menu-header{
+  color: var(--primary-color);
+  margin-right: 1rem;
+}
+
+.tab-content img{
+  width: 100%;
+}
+
+/* --------------------------------- Contact --------------------------------- */
+
+section#contact{
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgb(188, 108, 37, 1)), url(../img/slider2.jpg);
+}
+
+section#contact input,section#contact textarea{
+  background: inherit;
+}
+section#contact input:focus,section#contact textarea:focus{
+  background-color: var(--primary-color);
+}
+
+label{
+  color: white;
+}
+
+input::placeholder{
+  color: white !important;
+}
+
+textarea{
+  resize: none;
+  height: 100px !important;
+}
+.form-floating label{
+  color: white;
+}
+
+.form-floating:focus-within label {
+  color: black !important;
+}
+
+.google-map{
+  filter: grayscale(100);
+  width: 100%;
+}
+
+/* --------------------------------- Footer --------------------------------- */
+
+footer{
+  background-color: var(--primary-color);
+}
 
